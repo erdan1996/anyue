@@ -1,0 +1,55 @@
+@import "../css/base.css";
+@import "../js/swiper/swiper.min.css";
+@import "../css/header.css";
+.about-title {
+    box-sizing: border-box;
+    line-height: .86rem;
+    text-align: center;
+    font-size: .36rem;
+    font-family: SourceHanSansCN-Regular;
+    font-weight: 400;
+    color: rgba(5, 5, 5, 1);
+}
+
+.product-center .swiper-container .swiper-wrapper {
+    /* overflow: hidden; */
+}
+
+.about-detail {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 .2rem;
+}
+
+.about-center {
+    padding: 0 .2rem 0rem .2rem;
+}
+
+.swiper-container .swiper-wrapper {
+    font-size: .3rem;
+    font-family: SourceHanSansCN-Normal;
+    font-weight: 400;
+    color: rgba(143, 143, 143, 1);
+    margin-bottom: .64rem;
+}
+
+.swiper-wrapper .swiper-self {
+    width: 50% !important;
+    text-align: center;
+}
+
+.active-nav {
+    width: 100%;
+    color: #81D8CF !important;
+    border-bottom: .01rem solid #81D8CF;
+    text-align: center;
+}
+
+.swiper-container .swiper-wrapper .swiper-max {
+    min-height: 8rem;
+}
+
+.about-center .swiper-container .swiper-about-self .item {
+    width: 50% !important;
+    line-height: .75rem;
+}

@@ -1,0 +1,92 @@
+.footer {
+    position: relative;
+    width: 100%;
+    height: 7.85rem;
+    background: rgba(40, 40, 40, 1);
+    box-sizing: border-box;
+}
+
+.footer-top {
+    display: flex;
+}
+
+.footer-list {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 50%;
+    height: 3.8rem;
+    padding: 1.12rem 0 0 .4rem;
+}
+
+.footer-list li {
+    height: .52rem;
+    line-height: .52rem;
+    font-size: .26rem;
+    font-family: PingFang-SC-Medium;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-list li a:hover {
+    text-decoration: none;
+}
+
+.footer-contact {
+    width: 50%;
+    padding-top: .8rem;
+    font-size: .24rem;
+    font-family: SourceHanSansCN-Normal;
+    font-weight: 400;
+}
+
+.footer-anyue {
+    width: 2.39rem;
+    height: .27rem;
+    margin-bottom: .49rem;
+}
+
+.footer-anyue img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-contact span {
+    color: rgba(178, 178, 178, 1);
+}
+
+.footer-contact dl dt {
+    color: rgba(230, 230, 230, 1);
+    margin-top: .55rem;
+    margin-bottom: .14rem;
+}
+
+.footer-contact dl dd {
+    font-size: .28rem;
+    font-family: Exotic350BT-DemiBold;
+    font-weight: bold;
+    color: rgba(230, 230, 230, 1);
+    margin-bottom: .18rem;
+}
+
+.public-address {
+    width: 1.78rem;
+    height: 1.78rem;
+    background-color: skyblue;
+    color: rgba(128, 128, 128, 1);
+}
+
+.public-address img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: .2rem;
+}
+
+.copyright {
+    font-size: .24rem;
+    font-family: SourceHanSansCN-Normal;
+    font-weight: 400;
+    color: rgba(128, 128, 128, 1);
+    text-align: center;
+    margin-top: .89rem;
+}

@@ -1,0 +1,6 @@
+{
+    "cssrem.rootFontSize": 100,
+      "cssrem.fixedDigits": 6,
+   "cssrem.autoRemovePrefixZero": true,
+    "open-in-browser.default":"Chrome"
+}

@@ -1,0 +1,82 @@
+@import "../css/base.css";
+.news-list {
+    box-sizing: border-box;
+    padding: 0 .2rem;
+    overflow: hidden;
+}
+
+.news-list li {
+    display: flex;
+    height: .86rem;
+    line-height: .86rem;
+    width: 100%;
+    border-bottom: 1px solid rgba(245, 245, 245, 1);
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.news-list li i {
+    font-size: .16rem;
+}
+
+.news-list li span {
+    box-sizing: border-box;
+    font-size: .28rem;
+    font-family: PingFang-SC-Regular;
+    font-weight: 400;
+    color: rgba(5, 5, 5, 1);
+    max-width: 62%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.news-list li span img {
+    vertical-align: middle;
+    margin-right: .07rem;
+}
+
+.news-list li span:last-child {
+    font-size: .24rem;
+    font-family: PingFang-SC-Regular;
+    font-weight: 400;
+    color: rgba(117, 117, 117, 1);
+}
+
+.news button {
+    width: 3.98rem;
+    height: .72rem;
+    background: rgba(129, 216, 207, 1);
+    border-radius: .36rem;
+    margin: .5rem 0 .76rem 1.76rem;
+    font-size: .28rem;
+    font-family: SourceHanSansCN-Regular;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px .02rem .02rem rgba(33, 82, 77, 0.26);
+}
+
+.product-all {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: .5rem 0 .26rem 0;
+    text-align: center;
+    font-size: .24rem;
+    font-family: SourceHanSansCN-Normal;
+    font-weight: 400;
+    color: rgba(143, 143, 143, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.product-part {
+    display: block;
+    width: 100%;
+    padding: .2rem 0;
+    background-color: rgba(245, 245, 245, 1);
+    color: rgba(143, 143, 143, 1);
+    font-size: .24rem;
+    font-family: SourceHanSansCN-Normal;
+    font-weight: 400;
+    text-align: center;
+}

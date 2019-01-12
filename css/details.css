@@ -1,0 +1,62 @@
+@import "../css/base.css";
+.header-details {
+    box-sizing: border-box;
+    width: 100%;
+    height: .87rem;
+    border-bottom: 1px solid rgba(230, 230, 230, 1);
+    position: relative;
+    text-align: center;
+    position: relative;
+    line-height: .87rem;
+    font-size: .34rem;
+}
+
+.header-details a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: .88rem;
+    display: inline-block;
+    text-align: center;
+    width: .86rem;
+    height: 100%;
+}
+
+.header-details a i {
+    color: rgba(5, 5, 5, 1);
+    font-size: .32rem;
+}
+
+.about-title {
+    box-sizing: border-box;
+    line-height: .65rem;
+    text-align: center;
+    font-size: .36rem;
+    font-family: SourceHanSansCN-Regular;
+    font-weight: 400;
+    color: rgba(5, 5, 5, 1);
+}
+
+.detail-title {
+    box-sizing: border-box;
+    padding: .32rem 0 .29rem;
+    font-size: .36rem;
+}
+
+.detail-container {
+    margin: 0 .41rem .6rem .2rem;
+    font-family: SourceHanSansCN-Medium;
+    font-weight: 500;
+    color: rgba(82, 82, 82, 1);
+    min-height: 8rem;
+}
+
+.detail-time {
+    margin-bottom: .86rem;
+    font-size: .24rem;
+}
+
+.detail-article {
+    font-size: .3rem;
+    min-height: .79rem;
+}

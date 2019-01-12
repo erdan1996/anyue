@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible " content="ie=edge ">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <meta name="description" content="不超过150个字符" />
+    <meta name="keywords" content="" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <script src="../js/flexible.min.js "></script>
+    <script src="../js/swiper/swiper.min.js"></script>
+    <script src="../js/jquery-1.8.3.min.js"></script>
+
+</head>
+
+<body>
+    <!-- header start -->
+    <header class="header">
+        <a href="" class="back">
+            <i class="iconfont">&#xe601;</i>
+        </a>
+        <a href="" class="logo-wrap">
+            <div class="logo-img">
+                <img src="../img/redanyue.png" alt="">
+            </div>
+        </a>
+        <div class="fake-box"></div>
+    </header>
+    <!-- header end -->
+
+    <div class="about-title">关于ANJOY</div>
+    <div class="about-center">
+        <div class="swiper-container swiper-container-horizontal" id="swiper-container2" style="width:100%;">
+            <div class="swiper-wrapper swiper-big-self swiper-about-self">
+                <div class="swiper-slide active-nav swiper-slide-visible swiper-slide-active swiper-self item ">
+                    <div class="biankuang">
+                        企业简介
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-visible swiper-slide-next swiper-self item">
+                    <div class="biankuang">
+                        企业文化
+                    </div>
+                </div>
+
+            </div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+        </div>
+        <div class="swiper-container swiper-container-horizontal" id="swiper-container3" style="width:100%;">
+            <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+                <div class="swiper-slide blue-slide swiper-slide-active swiper-max">详情详情详情详情详情详情详情详情详情详情详情详 详情详情详情详情详情详情详情详情详情详情详情情 详情详情详情详情
+                </div>
+                <div class="swiper-slide red-slide swiper-slide-next swiper-max">详情详情详情详情详情详情详情详情详情详情详情详 详情详情详情详情详情详情详情详情详情详情详情情 详情详情详情详情
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-top">
+            <ul class="footer-list">
+                <li><a>
+                                        首页
+                                    </a>
+                </li>
+                <li><a>主营业务</a></li>
+                <li><a>成功案例</a></li>
+                <li><a>产品中心</a></li>
+                <li><a>关于Anioy</a></li>
+            </ul>
+            <div class="footer-contact">
+                <div class="footer-anyue">
+                    <img src="../img/anyue.png" alt="">
+                </div>
+                <span>安悦始终致力于为您打造一个更安全的世界
+                                    </span>
+                <dl>
+                    <dt>联系我们</dt>
+                    <dd>400-000-1000</dd>
+                    <dd>400-000-1000</dd>
+                </dl>
+                <div class="public-address">
+                    <img src="../img/ewm.png" alt=""> 关主微信公众号
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            版权版权版权 版权版权版权 版权版权版权
+        </div>
+    </div>
+
+    <script src="../js/tab.js"></script>
+    <script>
+        $(function() {
+
+            var mySwiper2 = new Swiper('#swiper-container2', {
+                watchSlidesProgress: true,
+                watchSlidesVisibility: true,
+                slidesPerView: 2,
+                on: {
+                    slideChangeTransitionStart: function() {
+                        updateNavPosition()
+                    },
+                    tap: function() {
+                        mySwiper3.slideTo(mySwiper2.clickedIndex)
+                    }
+                }
+            })
+            var mySwiper3 = new Swiper('#swiper-container3', {
+
+                on: {
+                    slideChangeTransitionStart: function() {
+                        updateNavPosition()
+                    }
+                }
+
+            })
+            updateNavPosition()
+
+            function updateNavPosition() {
+                $('#swiper-container2 .active-nav').removeClass('active-nav')
+                console.log($('#swiper-container2 .swiper-slide').eq(mySwiper3.activeIndex).children());
+                var activeNav = $('#swiper-container2 .swiper-slide').eq(mySwiper3.activeIndex).children().addClass('active-nav');
+
+
+                if (!activeNav.hasClass('swiper-slide-visible')) {
+                    console.log(1);
+                    if (activeNav.index() > mySwiper2.activeIndex) {
+                        console.log(2);
+                        var thumbsPerNav = Math.floor(mySwiper2.width / activeNav.width()) - 1
+                        mySwiper2.slideTo(activeNav.index() - thumbsPerNav)
+                    } else {
+                        console.log(3);
+                        mySwiper2.slideTo(activeNav.index())
+                    }
+                }
+            }
+
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+.header {
+    height: .88rem;
+    width: 100%;
+    border-bottom: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back {
+    width: .72rem;
+    height: 100%;
+    text-align: center;
+}
+
+.back i {
+    font-size: .28rem;
+    line-height: .88rem;
+    color: #050505;
+}
+
+.logo-wrap {
+    width: 2.21rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-wrap .logo-img {
+    width: 100%;
+    height: 0;
+    position: relative;
+    display: block;
+    padding-bottom: 10.85972850678733%;
+    overflow: hidden;
+}
+
+.logo-wrap .logo-img img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.fake-box {
+    width: .72rem;
+    height: 100%;
+}
+
+.about-title {
+    box-sizing: border-box;
+    line-height: .86rem;
+    text-align: center;
+    font-size: .36rem;
+    font-family: SourceHanSansCN-Regular;
+    font-weight: 400;
+    color: rgba(5, 5, 5, 1);
+}

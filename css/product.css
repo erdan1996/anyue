@@ -1,0 +1,87 @@
+@import "../css/base.css";
+@import "../css/success.css";
+.product-all {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: .5rem 0 .26rem 0;
+    text-align: center;
+    font-size: .24rem;
+    font-family: SourceHanSansCN-Normal;
+    font-weight: 400;
+    color: rgba(143, 143, 143, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.product-part {
+    display: block;
+    width: 100%;
+    padding: .2rem 0;
+    background-color: rgba(245, 245, 245, 1);
+    color: rgba(143, 143, 143, 1);
+    font-size: .24rem;
+    font-family: SourceHanSansCN-Normal;
+    font-weight: 400;
+    text-align: center;
+}
+
+.swiper-big-self {
+    height: .75rem;
+    line-height: .75rem;
+    text-align: center;
+    font-size: .3rem;
+    font-family: SourceHanSansCN-Normal;
+    font-weight: 400;
+    color: rgba(143, 143, 143, 1);
+    margin-bottom: .4rem;
+    padding-left: .17rem;
+}
+
+.active-nav {
+    color: #81D8CF;
+    border-bottom: .01rem solid #81D8CF;
+}
+
+.biankuang {
+    max-width: 100%;
+    line-height: .76rem;
+    display: inline-block;
+}
+
+.swiper-self-small-box .swiper-wrapper .swiper-slide ul {
+    display: flex;
+    padding: 0 .2rem;
+}
+
+.swiper-self-small-box .swiper-wrapper .swiper-slide ul li {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.swiper-self-small-box .swiper-wrapper .swiper-slide ul li div {
+    width: 50%;
+    text-align: center;
+}
+
+
+/* .system-self-li-div .img-div {
+     width: 100%;
+     height: 0;
+     position: relative;
+     display: block;
+     padding-bottom: 71.88405797101449%;
+     overflow: hidden;
+ } */
+
+.swiper-self-small-box .swiper-wrapper .swiper-slide ul li div img {
+    width: 100%;
+}
+
+.swiper-self-small-box .swiper-wrapper .swiper-slide ul li div span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    display: block;
+}
